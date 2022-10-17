@@ -24,14 +24,14 @@ window.addEventListener("load", function () {
     if (!validarTexto(email)) {
       Swal.fire({
         title: "To DO",
-        text: "Por favor complete el email",
+        text: "Por favor ingrese un email",
         icon: "warning",
         confirmButtonText: "Aceptar",
       });
       return;
     }
 
-    /*if (!validarEmail(email)) {
+    if (!validarEmail(email)) {
       Swal.fire({
         title: "To DO",
         text: "Formato de email inválido",
@@ -39,12 +39,12 @@ window.addEventListener("load", function () {
         confirmButtonText: "Aceptar",
       });
       return;
-    }*/
+    }
 
     if (!validarTexto(password)) {
       Swal.fire({
         title: "To DO",
-        text: "Por favor complete la contraseña",
+        text: "Por favor ingrese la contraseña",
         icon: "warning",
         confirmButtonText: "Aceptar",
       });

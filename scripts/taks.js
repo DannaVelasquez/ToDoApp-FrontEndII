@@ -97,7 +97,7 @@ window.addEventListener("load", function () {
     if (!validarTexto(tarea)) {
       Swal.fire({
         title: "To DO",
-        text: "Por favor, complete la tarea",
+        text: "Por favor ingrese una tarea",
         icon: "warning",
         confirmButtonText: "Aceptar",
       });
@@ -121,7 +121,7 @@ window.addEventListener("load", function () {
     fetch(`${url}/tasks`, config)
       .then((response) => response.json())
       .then((data) => {
-        console.log("Tarea recien posteada");
+        console.log("Tarea publicada");
         console.log(data);
         inputTarea.value = "";
         consultarTareas();
@@ -236,7 +236,7 @@ window.addEventListener("load", function () {
 
     Swal.fire({
       title: "To DO",
-      text: "¿Confirma eliminar la tarea?",
+      text: "¿Está seguro de eliminar la tarea?",
       icon: "question",
 
       showDenyButton: false,
